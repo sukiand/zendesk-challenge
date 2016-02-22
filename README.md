@@ -1,13 +1,13 @@
 ### Information
 This is a simple python program to solve zendesk challenge program. Search Indicators of Compromise(IOC) in several data sources.
 
-- local data source
+- local data source  
 JSON data provided by zendesk. Stored in mongodb. Support searching commands: ip, port, url, domain, file, hash, and multiple search.
-- [DSheild](https://isc.sans.edu/api/)
+- [DSheild](https://isc.sans.edu/api/)  
 Public API. Support searching commands: ip, port
-- [Virustotal](https://www.virustotal.com/en/documentation/public-api/)
+- [Virustotal](https://www.virustotal.com/en/documentation/public-api/)  
 API key needed. Support searching commands: ip, domain, url, hash
-- [Google Safe Browsing](https://developers.google.com/safe-browsing/?csw=1)
+- [Google Safe Browsing](https://developers.google.com/safe-browsing/?csw=1)  
 API key needed. Support searching commands: url
 
 ### Author
@@ -16,9 +16,9 @@ Changyun Gong.
 ### Setup
 
 #### develop environment
-python 2.7.6
-ubuntu 14.04
-mongoDB 3.0.6
+python 2.7.6  
+ubuntu 14.04  
+mongoDB 3.0.6  
 
 1 import the JSON to mongoDB
 ```bash
@@ -45,14 +45,13 @@ python main.py
 ```
 
 #### commands
-ip ip_address [-s source]
-port port_num [-s source]
-url urls [-s source]
-domain domain_names [-s source]
-file file_names [-s source]
-hash hash_values [-s source]
-search [-i ip_address] [-p port] [-d domain] [-u urls] [-f file_names] [-h hash_values] [-s source]
-domain
+ip ip_address [-s source]  
+port port_num [-s source]  
+url urls [-s source]  
+domain domain_names [-s source]  
+file file_names [-s source]  
+hash hash_values [-s source]  
+search [-i ip_address] [-p port] [-d domain] [-u urls] [-f file_names] [-h hash_values] [-s source]  
 
 #### examples
 ```bash
